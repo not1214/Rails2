@@ -374,3 +374,139 @@ Processing by TodolistsController#show as HTML
 Completed 200 OK in 55ms (Views: 51.5ms | ActiveRecord: 0.3ms | Allocations: 4531)
 
 
+Started GET "/todolists" for ::1 at 2021-10-29 21:47:33 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodolistsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:2
+  Rendered todolists/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4576)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 89.4ms | Allocations: 11293)
+Completed 200 OK in 107ms (Views: 94.5ms | ActiveRecord: 1.6ms | Allocations: 15591)
+
+
+Started GET "/todolists/1" for ::1 at 2021-10-29 21:47:38 +0900
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 186)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 59.2ms | Allocations: 3832)
+Completed 200 OK in 69ms (Views: 61.2ms | ActiveRecord: 0.4ms | Allocations: 5982)
+
+
+Started GET "/todolists/1/edit" for ::1 at 2021-10-29 21:47:43 +0900
+Processing by TodolistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:21:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/edit.html.erb within layouts/application
+  Rendered todolists/edit.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 67.3ms | Allocations: 4675)
+Completed 200 OK in 74ms (Views: 69.5ms | ActiveRecord: 0.2ms | Allocations: 5877)
+
+
+Started GET "/todolists/1" for ::1 at 2021-10-29 21:48:03 +0900
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 43)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 3525)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.2ms | Allocations: 4697)
+
+
+Started GET "/todolists" for ::1 at 2021-10-29 21:48:09 +0900
+Processing by TodolistsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/index.html.erb within layouts/application
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists"[0m
+  ↳ app/views/todolists/index.html.erb:2
+  Rendered todolists/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 794)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.1ms | Allocations: 4284)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.3ms | Allocations: 4779)
+
+
+Started GET "/todolists/1/edit" for ::1 at 2021-10-29 22:11:36 +0900
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TodolistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:21:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/edit.html.erb within layouts/application
+  Rendered todolists/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1377)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 73.4ms | Allocations: 8064)
+Completed 200 OK in 105ms (Views: 83.3ms | ActiveRecord: 1.7ms | Allocations: 16929)
+
+
+Started GET "/todolists/1/edit" for ::1 at 2021-10-29 22:15:27 +0900
+Processing by TodolistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/todolists_controller.rb:21:in `edit'
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:21:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/edit.html.erb within layouts/application
+  Rendered todolists/edit.html.erb within layouts/application (Duration: 2.3ms | Allocations: 654)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 53.4ms | Allocations: 4483)
+Completed 200 OK in 75ms (Views: 58.7ms | ActiveRecord: 2.5ms | Allocations: 10595)
+
+
+Started PATCH "/todolists/1" for ::1 at 2021-10-29 22:15:36 +0900
+Processing by TodolistsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "list"=>{"title"=>"title1 change", "body"=>"body1 change"}, "commit"=>"保存", "id"=>"1"}
+  [1m[36mList Load (0.4ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:25:in `update'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/todolists_controller.rb:26:in `update'
+  [1m[36mList Update (1.5ms)[0m  [1m[33mUPDATE "lists" SET "title" = ?, "body" = ?, "updated_at" = ? WHERE "lists"."id" = ?[0m  [["title", "title1 change"], ["body", "body1 change"], ["updated_at", "2021-10-29 13:15:36.957365"], ["id", 1]]
+  ↳ app/controllers/todolists_controller.rb:26:in `update'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/todolists_controller.rb:26:in `update'
+Redirected to http://localhost:3000/todolists/1
+Completed 302 Found in 39ms (ActiveRecord: 7.1ms | Allocations: 4010)
+
+
+Started GET "/todolists/1" for ::1 at 2021-10-29 22:15:37 +0900
+Processing by TodolistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.3ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:17:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/show.html.erb within layouts/application
+  Rendered todolists/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 226)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 63.8ms | Allocations: 3717)
+Completed 200 OK in 71ms (Views: 66.0ms | ActiveRecord: 0.3ms | Allocations: 4872)
+
+
+Started GET "/todolists/1/edit" for ::1 at 2021-10-29 22:15:40 +0900
+Processing by TodolistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (0.2ms)[0m  [1m[34mSELECT "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/todolists_controller.rb:21:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering todolists/edit.html.erb within layouts/application
+  Rendered todolists/edit.html.erb within layouts/application (Duration: 0.7ms | Allocations: 276)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.0ms | Allocations: 3742)
+Completed 200 OK in 57ms (Views: 52.8ms | ActiveRecord: 0.2ms | Allocations: 4753)
+
+
